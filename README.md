@@ -14,8 +14,10 @@ Add footer view to your ViewController.
 ```objective-c
 @interface MyViewController <UITableViewDelegate>
 // ...
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;        // From NIB
 @property (strong, nonatomic) GFGroupedTableFooterView *footer1;    // Footer for first section
+
 @end
 ```
 
@@ -29,6 +31,7 @@ Initialize footer view and implement tableView:heightForFooterInSection: and tab
 {
     [super viewDidLoad];
     // ...
+
     // Initialize GFGroupedTableFooterView
     _footer1 = [_tableView groupedFooterViewWithText:@"FOOTER TEXT" textAlignment:UITextAlignmentLeft];
 }
