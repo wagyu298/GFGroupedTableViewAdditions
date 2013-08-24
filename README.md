@@ -7,9 +7,9 @@ GFGroupedTableViewAdditions provides function to control the text alignment of t
 Usage
 -----
 
-1. Add UITableView+GFGroupedTableViewAdditions.[hm] to your project.
+Add UITableView+GFGroupedTableViewAdditions.[hm] to your project.
 
-2. Add footer view to your ViewController.
+Add footer view to your ViewController.
 
 ```objective-c
 @interface MyViewController <UITableViewDelegate>
@@ -19,7 +19,7 @@ Usage
 @end
 ```
 
-3. Initialize footer view and implement tableView:heightForFooterInSection: and tableView:viewForFooterInSection:. (If you already implemented tableView:titleForFooterInSection:, remove it first.)
+Initialize footer view and implement tableView:heightForFooterInSection: and tableView:viewForFooterInSection:. (If you already implemented tableView:titleForFooterInSection:, remove it first.)
 
 ```objective-c
 @implementation MyViewController
